@@ -37,10 +37,6 @@ app.use(express.json());
 app.use('/thoughts', thoughtsRouter);
 app.use('/users', userRouter);
 
-
-//root routes
-
-
 app.listen(PORT, () => {
     console.log(`app is listening on port ${PORT}`);
 })
