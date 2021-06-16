@@ -24,9 +24,14 @@ router.post('/', (req,res) => {
         thought: req.body.thought
     });
 
-    Thought.create(thought).then(s => {
+    if(thought.thought){
+        Thought.create(thought).then(s => {
         res.send('new thought created')
-    })
+        })
+    } else {
+        res.send('no thought sent or created')
+    }
+    
 })
 
 const thoughtsRouter = module.exports = router;

@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 //model requires
 const User = require('./models/user');
 const Thought = require('./models/thought');
-const user = require('./models/user');
 
 //import routers
 const thoughtsRouter = require('./routes/thoughts');
